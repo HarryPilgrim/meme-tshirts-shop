@@ -41,7 +41,7 @@ subreddits = [
 if __name__ == "__main__":
     print("Starting Reddit scraping...")
     scraper = RedditContent(subreddits, CLIENT_ID=REDDIT_CLIENT_ID, CLIENT_SECRET=REDDIT_CLIENT_SECRET, USER_AGENT=REDDIT_USER_AGENT)
-    scraper.download_posts(limit=5, sort='hot')
+    scraper.download_posts(limit=15, sort='hot')
     print("Reddit download complete.\n")
     time.sleep(2)
 
