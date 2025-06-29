@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+.env
+*.pyc
+__pycache__/
+*.sqlite3
+*.log
+reddit_photos/
+printify_upload.jsonl
+reddit_images.jsonl

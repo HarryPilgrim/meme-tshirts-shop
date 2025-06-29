@@ -1,0 +1,19 @@
+RPC_SLUG = "https://bsky.social/xrpc/"
+CHAT_SLUG = "https://api.bsky.chat/xrpc/"
+CREATE_SESSION = "com.atproto.server.createSession"
+CREATE_RECORD = "com.atproto.repo.createRecord"
+POST_TYPE = "app.bsky.feed.post"
+MENTION_TYPE = "app.bsky.richtext.facet#mention"
+LINK_TYPE = "app.bsky.richtext.facet#link"
+HASHTAG_TYPE = "app.bsky.richtext.facet#tag"
+RESOLVE_HANDLE = "com.atproto.identity.resolveHandle"
+UPLOAD_BLOB = "com.atproto.repo.uploadBlob"
+IMAGES_TYPE = "app.bsky.embed.images"
+VIDEO_TYPE = "app.bsky.embed.video"
+LIST_CONVOS = "chat.bsky.convo.listConvos"
+GET_MESSAGES = "chat.bsky.convo.getMessages"
+GET_CONVO_FOR_MEMBERS = "chat.bsky.convo.getConvoForMembers"
+SEND_MESSAGE = "chat.bsky.convo.sendMessage"
+
+
+GET_MESSAGE_MAX_LIMIT = 100
