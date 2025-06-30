@@ -6,7 +6,7 @@ This project is a self-sustaining, end-to-end pipeline that scrapes fresh memes 
 
 ---
 
-![tshirt page](https://github.com/user-attachments/assets/74409b3c-56ed-4aca-956e-7c7b9a700177)
+![front_page](https://github.com/user-attachments/assets/617e8f4a-aaed-42e6-b86a-b8a8a3c95a93)
 
 ---
 
@@ -48,7 +48,7 @@ I’ve long been fascinated by automation and the idea of software that works fo
 
 ---
 
-![front_page](https://github.com/user-attachments/assets/617e8f4a-aaed-42e6-b86a-b8a8a3c95a93)
+![tshirt page](https://github.com/user-attachments/assets/74409b3c-56ed-4aca-956e-7c7b9a700177)
 
 ---
 
