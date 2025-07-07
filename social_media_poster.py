@@ -24,7 +24,7 @@ BLUESKY_HANDLE = os.getenv("BLUESKY_HANDLE")
 BLUESKY_APP_PASSWORD = os.getenv("BLUESKY_APP_PASSWORD")
 
 class SocialMediaPoster:
-    def __init__(self, jsonl_path='printify_upload.jsonl'):
+    def __init__(self, jsonl_path='meme-tshirts-shop/printify_upload.jsonl'):
         self.jsonl_path = jsonl_path
 
         auth = tweepy.OAuth1UserHandler(
@@ -93,6 +93,13 @@ class SocialMediaPoster:
             if not rec.get('printify_product_id'):
                 continue
 
+            if not rec.get('bluesky_url'):
+                url = self.try_with_retries(self.post_to_bluesky, args=(rec,), id=rec['id'], platform="Bluesky")
+                if url:
+                    rec['bluesky_url'] = url
+                    print(f"Bluesky {rec['id']} → {url}")
+                    updated = True
+
             if not rec.get('twitter_url'):
                 url = self.try_with_retries(self.post_to_twitter, args=(rec,), id=rec['id'], platform="Twitter")
                 if url:
@@ -100,12 +107,7 @@ class SocialMediaPoster:
                     print(f"Tweeted {rec['id']} → {url}")
                     updated = True
 
-            if not rec.get('bluesky_url'):
-                url = self.try_with_retries(self.post_to_bluesky, args=(rec,), id=rec['id'], platform="Bluesky")
-                if url:
-                    rec['bluesky_url'] = url
-                    print(f"Bluesky {rec['id']} → {url}")
-                    updated = True
+
 
             if rec.get('twitter_url') and rec.get('bluesky_url'):
                 try:
@@ -118,7 +120,7 @@ class SocialMediaPoster:
             self.save_records(records)
             print("✅ All new posts processed and JSONL updated.")
         # At the very end of your run() function
-        with open('reddit_images.jsonl', 'w', encoding='utf-8') as fp:
+        with open('meme-tshirts-shop/reddit_images.jsonl', 'w', encoding='utf-8') as fp:
             pass  # This clears the file
         print("✅ All done. JSONL file emptied.")
 

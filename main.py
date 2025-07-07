@@ -41,7 +41,7 @@ subreddits = [
 if __name__ == "__main__":
     print("Starting Reddit scraping...")
     scraper = RedditContent(subreddits, CLIENT_ID=REDDIT_CLIENT_ID, CLIENT_SECRET=REDDIT_CLIENT_SECRET, USER_AGENT=REDDIT_USER_AGENT)
-    scraper.download_posts(limit=15, sort='hot')
+    scraper.download_posts(limit=10, sort='hot')
     print("Reddit download complete.\n")
     time.sleep(2)
 
@@ -49,8 +49,8 @@ if __name__ == "__main__":
     print("Loaded SHOPIFY_DOMAIN:", SHOPIFY_DOMAIN)
     uploader = PrintifyUploader(ACCESS_TOKEN, SHOPIFY_ID, shopify_domain=SHOPIFY_DOMAIN, shopify_access_token=shopify_access_token)
     uploader.process_jsonl(
-        in_path="reddit_images.jsonl",
-        out_path="printify_upload.jsonl"
+        in_path="meme-tshirts-shop/reddit_images.jsonl",
+        out_path="meme-tshirts-shop/printify_upload.jsonl"
     )
     print("Printify upload complete.\n")
     time.sleep(2)

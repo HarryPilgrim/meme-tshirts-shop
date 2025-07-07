@@ -35,7 +35,7 @@ class PrintifyUploader:
             "Do not iron directly on the print." +
             "\n"
         )
-        self.variant_ids = [17643]
+        self.variant_ids = [17643, 17644, 17645, 17646, 17647, 17648, 17390, 17391, 17392 ,17393 ,17394, 17395]
 
     def upload_image(self, path, fname):
         url = f"{self.base_url}/uploads/images.json"
@@ -135,7 +135,7 @@ class PrintifyUploader:
         r.raise_for_status()
         return r.status_code == 204
 
-    def process_jsonl(self, in_path='reddit_images.jsonl', out_path='printify_upload.jsonl'):
+    def process_jsonl(self, in_path='meme-tshirts-shop/reddit_images.jsonl', out_path='meme-tshirts-shop/printify_upload.jsonl'):
         # load existing records
         with open(in_path, encoding='utf-8') as f:
             records = [json.loads(l) for l in f if l.strip()]
@@ -164,12 +164,13 @@ class PrintifyUploader:
 
         # save updated JSONL
         os.makedirs(os.path.dirname(out_path) or '.', exist_ok=True)
+        #os.makedirs(os.path.dirname(out_path))
         with open(out_path, 'w', encoding='utf-8') as fp:
             for rec in records:
                 fp.write(json.dumps(rec, ensure_ascii=False) + '\n')
         print(f"Done → {out_path}")
 
-    def delete_old_unsold_products(self, jsonl_path='printify_upload.jsonl', min_sales=3, max_age_days=20):
+    def delete_old_unsold_products(self, jsonl_path='meme-tshirts-shop/printify_upload.jsonl', min_sales=3, max_age_days=20):
         if not os.path.exists(jsonl_path):
             print("No JSONL file found.")
             return

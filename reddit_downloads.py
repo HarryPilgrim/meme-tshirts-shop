@@ -6,10 +6,19 @@ import csv
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 load_dotenv()
-
+import time
 # Ensure directory exists
 import os
 
+
+
+def ensure_dir(path):
+    """
+    Create parent directories for the given file path if they don't exist.
+    """
+    parent = os.path.dirname(path)
+    if parent and not os.path.exists(parent):
+        os.makedirs(parent, exist_ok=True)
 
 def ensure_dir(path):
     """
@@ -21,8 +30,8 @@ def ensure_dir(path):
 
 
 class RedditContent:
-    def __init__(self, subreddits, CLIENT_ID, CLIENT_SECRET, USER_AGENT, output_dir='reddit_photos',
-                 csv_path='reddit_images.csv'):
+    def __init__(self, subreddits, CLIENT_ID, CLIENT_SECRET, USER_AGENT, output_dir='meme-tshirts-shop/reddit_photos',
+                 csv_path='meme-tshirts-shop/reddit_images.csv'):
         load_dotenv()
         self.CLIENT_ID = CLIENT_ID
         self.CLIENT_SECRET = CLIENT_SECRET
@@ -44,9 +53,47 @@ class RedditContent:
         # Initialize a simple counter for CSV 'id' column
         self._next_id = 1
 
+    def download_image_with_retry(self, img_url, max_retries=3):
+        """Download image with retry logic and proper headers"""
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Referer': 'https://www.reddit.com/',
+            'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+        }
+
+        for attempt in range(max_retries):
+            try:
+                r = requests.get(img_url, headers=headers, stream=True, timeout=10)
+                r.raise_for_status()
+                return r
+            except requests.exceptions.HTTPError as e:
+                if e.response.status_code == 403:
+                    print(f"[⚠️] 403 error for {img_url}, attempt {attempt + 1}/{max_retries}")
+                    if attempt < max_retries - 1:
+                        time.sleep(2 ** attempt)  # Exponential backoff: 1s, 2s, 4s
+                        continue
+                    else:
+                        print(f"[❌] Skipping image after {max_retries} attempts: {img_url}")
+                        return None
+                else:
+                    print(f"[❌] HTTP error {e.response.status_code} for {img_url}: {e}")
+                    return None
+            except requests.exceptions.RequestException as e:
+                print(f"[❌] Request error for {img_url}: {e}")
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                    continue
+                return None
+        return None
+
     def download_posts(self, limit=10, sort='hot'):
         out_path = self.csv_path.replace('.csv', '.jsonl')
         downloaded = 0
+        skipped = 0
 
         with open(out_path, 'a', encoding='utf-8') as fp:
             for name in self.subreddits:
@@ -55,7 +102,7 @@ class RedditContent:
 
                 for post in posts:
                     if downloaded >= limit:
-                        return
+                        break
 
                     # collect image URLs...
                     urls, gallery_id = [], ''
@@ -72,22 +119,36 @@ class RedditContent:
 
                     for img_url in urls:
                         if downloaded >= limit:
-                            return
+                            break
 
-                        # download image to disk (unchanged)
+                        # download image to disk with retry logic
                         filename = os.path.basename(urlparse(img_url).path)
                         local_path = f"{self.output_dir}/{filename}"
                         ensure_dir(local_path)
-                        r = requests.get(img_url, stream=True); r.raise_for_status()
-                        with open(local_path, 'wb') as f:
-                            for chunk in r.iter_content(1024):
-                                f.write(chunk)
+
+                        # Try to download with retry logic
+                        r = self.download_image_with_retry(img_url)
+
+                        if r is None:
+                            print(f"[⚠️] Skipping failed download: {filename}")
+                            skipped += 1
+                            continue
+
+                        try:
+                            with open(local_path, 'wb') as f:
+                                for chunk in r.iter_content(1024):
+                                    f.write(chunk)
+                        except Exception as e:
+                            print(f"[❌] Error saving file {filename}: {e}")
+                            skipped += 1
+                            continue
 
                         # build the record
                         rec = {
                             "id": downloaded + 1,
                             "post_id": post.id,
                             "gallery_id": gallery_id,
+                            #"local_path": f"meme-tshirts-shop/{local_path}",
                             "local_path": local_path,
                             "file_name": filename,
                             "title": f"{post.title.strip()} - meme on a T-shirt",
@@ -111,6 +172,14 @@ class RedditContent:
                         downloaded += 1
                         print(f"[✅] Saved JSON record #{downloaded}")
 
+                        # Add delay between requests to avoid rate limiting
+                        time.sleep(1.5)  # Wait 1.5 seconds between requests
+
+                if downloaded >= limit:
+                    break
+
+        print(f"\n[📊] Summary: {downloaded} images downloaded, {skipped} skipped due to errors")
+
     def _build_description(self, post_id):
         try:
             sub = self.reddit.submission(id=post_id)
@@ -121,6 +190,7 @@ class RedditContent:
             return '<br><br>'.join(top3)
         except:
             return ''
+
     def _save_and_record(self, post_id, gallery_id, img_url, title, description, tags, writer, post_permalink=''):
         parsed = urlparse(img_url)
         filename = os.path.basename(parsed.path)
@@ -132,8 +202,11 @@ class RedditContent:
             return False
 
         try:
-            resp = requests.get(img_url, stream=True)
-            resp.raise_for_status()
+            # Use the retry method here too
+            resp = self.download_image_with_retry(img_url)
+            if resp is None:
+                return False
+
             with open(local_path, 'wb') as f:
                 for chunk in resp.iter_content(1024):
                     f.write(chunk)
@@ -166,6 +239,160 @@ class RedditContent:
         except Exception as e:
             print(f"[❌] Error downloading {img_url}: {e}")
             return False
+
+
+# class RedditContent:
+#     def __init__(self, subreddits, CLIENT_ID, CLIENT_SECRET, USER_AGENT, output_dir='reddit_photos',
+#                  csv_path='reddit_images.csv'):
+#         load_dotenv()
+#         self.CLIENT_ID = CLIENT_ID
+#         self.CLIENT_SECRET = CLIENT_SECRET
+#         self.USER_AGENT = USER_AGENT
+
+#         if not all([self.CLIENT_ID, self.CLIENT_SECRET, self.USER_AGENT]):
+#             raise ValueError('Missing one or more Reddit API credentials.')
+
+#         self.reddit = praw.Reddit(
+#             client_id=self.CLIENT_ID,
+#             client_secret=self.CLIENT_SECRET,
+#             user_agent=self.USER_AGENT
+#         )
+
+#         self.subreddits = subreddits
+#         # strip whitespace/newlines and trailing slash
+#         self.output_dir = output_dir.strip().rstrip('/')
+#         self.csv_path = csv_path
+#         # Initialize a simple counter for CSV 'id' column
+#         self._next_id = 1
+
+#     def download_posts(self, limit=10, sort='hot'):
+#         out_path = self.csv_path.replace('.csv', '.jsonl')
+#         downloaded = 0
+
+#         with open(out_path, 'a', encoding='utf-8') as fp:
+#             for name in self.subreddits:
+#                 subreddit = self.reddit.subreddit(name)
+#                 posts = getattr(subreddit, sort)(limit=limit * 3)
+
+#                 for post in posts:
+#                     if downloaded >= limit:
+#                         return
+
+#                     # collect image URLs...
+#                     urls, gallery_id = [], ''
+#                     if getattr(post, 'is_gallery', False):
+#                         gallery_id = post.id
+#                         for item in post.gallery_data['items']:
+#                             ext = post.media_metadata[item['media_id']]['m'].split('/')[-1]
+#                             if ext != 'gif':
+#                                 urls.append(
+#                                     post.media_metadata[item['media_id']]['s']['u'].split('?')[0]
+#                                 )
+#                     elif any(post.url.lower().endswith(ext) for ext in ('.jpg','.jpeg','.png')):
+#                         urls = [post.url]
+
+#                     for img_url in urls:
+#                         if downloaded >= limit:
+#                             return
+
+#                         # download image to disk (unchanged)
+#                         filename = os.path.basename(urlparse(img_url).path)
+#                         local_path = f"{self.output_dir}/{filename}"
+#                         ensure_dir(local_path)
+#                         r = requests.get(img_url, stream=True); r.raise_for_status()
+#                         with open(local_path, 'wb') as f:
+#                             for chunk in r.iter_content(1024):
+#                                 f.write(chunk)
+
+#                         # build the record
+#                         rec = {
+#                             "id": downloaded + 1,
+#                             "post_id": post.id,
+#                             "gallery_id": gallery_id,
+#                             "local_path": local_path,
+#                             "file_name": filename,
+#                             "title": f"{post.title.strip()} - meme on a T-shirt",
+#                             "description": self._build_description(post.id),
+#                             "tags": [],
+#                             "printify_address": f"https://www.reddit.com{post.permalink}",
+#                             # Printify fields empty for now:
+#                             "printify_product_id": None,
+#                             "retail_price": None,
+#                             "base_cost_pence": None,
+#                             "profit_estimate": None,
+#                             "shopify_url": None,
+#                             "twitter_url": None,
+#                             "bluesky_url": None,
+#                             "instagram_url": None,
+#                             "error": None
+#                         }
+
+#                         # append JSONL line
+#                         fp.write(json.dumps(rec, ensure_ascii=False) + "\n")
+#                         downloaded += 1
+#                         time.sleep(1)  # Wait 1 second between requests
+#                         print(f"[✅] Saved JSON record #{downloaded}")
+
+#     def _build_description(self, post_id):
+#         try:
+#             sub = self.reddit.submission(id=post_id)
+#             sub.comment_sort = 'top'
+#             sub.comments.replace_more(limit=0)
+#             top3 = [c.body.replace('"','').replace("'",'').replace('\n',' ').strip()
+#                     for c in sub.comments[:3] if len(c.body.strip())>10]
+#             return '<br><br>'.join(top3)
+#         except:
+#             return ''
+#     def _save_and_record(self, post_id, gallery_id, img_url, title, description, tags, writer, post_permalink=''):
+#         parsed = urlparse(img_url)
+#         filename = os.path.basename(parsed.path)
+#         # use forward slash to avoid backslashes/newlines in CSV
+#         local_path = f"{self.output_dir}/{filename}"
+#         ensure_dir(local_path)
+
+#         if os.path.exists(local_path):
+#             return False
+
+#         try:
+#             resp = requests.get(img_url, stream=True)
+#             resp.raise_for_status()
+#             with open(local_path, 'wb') as f:
+#                 for chunk in resp.iter_content(1024):
+#                     f.write(chunk)
+
+#             # Compose CSV row with sequential id and cleaned fields
+#             writer.writerow({
+#                 'id': self._next_id,
+#                 'gallery_id': gallery_id,
+#                 'local_path': local_path,
+#                 'file_name': filename,
+#                 'title': f"{title.strip()} - meme on a T-shirt",
+#                 'description': self._build_description(post_id, ''),
+#                 'tags': ','.join(tags),
+#                 'printify_address': 'none',
+#                 'post_url': f"https://www.reddit.com{post_permalink}",
+#                 'printify_product_id': '',
+#                 'retail_price': '',
+#                 'base_cost_pence': '',
+#                 'profit_estimate': '',
+#                 'shopify_url': '',
+#                 'twitter_url': '',
+#                 'bluesky_url': '',
+#                 'instagram_url': '',
+#                 'error': ''
+#             })
+
+#             self._next_id += 1
+#             print(f"[✅] Saved: {filename}")
+#             return True
+#         except Exception as e:
+#             print(f"[❌] Error downloading {img_url}: {e}")
+#             return False
+
+
+
+
+
 
 # import os
 # import requests
