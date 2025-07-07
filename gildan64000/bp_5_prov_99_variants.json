@@ -1,0 +1,5023 @@
+{
+  "id": 99,
+  "title": "Printify Choice",
+  "variants": [
+    {
+      "id": 17390,
+      "title": "Heather Grey / XS",
+      "options": {
+        "color": "Heather Grey",
+        "size": "XS"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "front",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17391,
+      "title": "Heather Grey / S",
+      "options": {
+        "color": "Heather Grey",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17392,
+      "title": "Heather Grey / M",
+      "options": {
+        "color": "Heather Grey",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17393,
+      "title": "Heather Grey / L",
+      "options": {
+        "color": "Heather Grey",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17394,
+      "title": "Heather Grey / XL",
+      "options": {
+        "color": "Heather Grey",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17395,
+      "title": "Heather Grey / 2XL",
+      "options": {
+        "color": "Heather Grey",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17396,
+      "title": "Heather Grey / 3XL",
+      "options": {
+        "color": "Heather Grey",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17397,
+      "title": "Heather Grey / 4XL",
+      "options": {
+        "color": "Heather Grey",
+        "size": "4XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17418,
+      "title": "Solid Banana Cream / S",
+      "options": {
+        "color": "Solid Banana Cream",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17419,
+      "title": "Solid Banana Cream / M",
+      "options": {
+        "color": "Solid Banana Cream",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17420,
+      "title": "Solid Banana Cream / L",
+      "options": {
+        "color": "Solid Banana Cream",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17421,
+      "title": "Solid Banana Cream / XL",
+      "options": {
+        "color": "Solid Banana Cream",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17422,
+      "title": "Solid Banana Cream / 2XL",
+      "options": {
+        "color": "Solid Banana Cream",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17423,
+      "title": "Solid Banana Cream / 3XL",
+      "options": {
+        "color": "Solid Banana Cream",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17426,
+      "title": "Solid Black / XS",
+      "options": {
+        "color": "Solid Black",
+        "size": "XS"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "front",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17427,
+      "title": "Solid Black / S",
+      "options": {
+        "color": "Solid Black",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17428,
+      "title": "Solid Black / M",
+      "options": {
+        "color": "Solid Black",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17429,
+      "title": "Solid Black / L",
+      "options": {
+        "color": "Solid Black",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17430,
+      "title": "Solid Black / XL",
+      "options": {
+        "color": "Solid Black",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17431,
+      "title": "Solid Black / 2XL",
+      "options": {
+        "color": "Solid Black",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17432,
+      "title": "Solid Black / 3XL",
+      "options": {
+        "color": "Solid Black",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17433,
+      "title": "Solid Black / 4XL",
+      "options": {
+        "color": "Solid Black",
+        "size": "4XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17445,
+      "title": "Solid Cool Blue / S",
+      "options": {
+        "color": "Solid Cool Blue",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17446,
+      "title": "Solid Cool Blue / M",
+      "options": {
+        "color": "Solid Cool Blue",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17447,
+      "title": "Solid Cool Blue / L",
+      "options": {
+        "color": "Solid Cool Blue",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17448,
+      "title": "Solid Cool Blue / XL",
+      "options": {
+        "color": "Solid Cool Blue",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17449,
+      "title": "Solid Cool Blue / 2XL",
+      "options": {
+        "color": "Solid Cool Blue",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17450,
+      "title": "Solid Cool Blue / 3XL",
+      "options": {
+        "color": "Solid Cool Blue",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17454,
+      "title": "Solid Cream / S",
+      "options": {
+        "color": "Solid Cream",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17455,
+      "title": "Solid Cream / M",
+      "options": {
+        "color": "Solid Cream",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17456,
+      "title": "Solid Cream / L",
+      "options": {
+        "color": "Solid Cream",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17457,
+      "title": "Solid Cream / XL",
+      "options": {
+        "color": "Solid Cream",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17458,
+      "title": "Solid Cream / 2XL",
+      "options": {
+        "color": "Solid Cream",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17459,
+      "title": "Solid Cream / 3XL",
+      "options": {
+        "color": "Solid Cream",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17463,
+      "title": "Solid Dark Chocolate / S",
+      "options": {
+        "color": "Solid Dark Chocolate",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17464,
+      "title": "Solid Dark Chocolate / M",
+      "options": {
+        "color": "Solid Dark Chocolate",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17465,
+      "title": "Solid Dark Chocolate / L",
+      "options": {
+        "color": "Solid Dark Chocolate",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17466,
+      "title": "Solid Dark Chocolate / XL",
+      "options": {
+        "color": "Solid Dark Chocolate",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17467,
+      "title": "Solid Dark Chocolate / 2XL",
+      "options": {
+        "color": "Solid Dark Chocolate",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17468,
+      "title": "Solid Dark Chocolate / 3XL",
+      "options": {
+        "color": "Solid Dark Chocolate",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17472,
+      "title": "Solid Forest Green / S",
+      "options": {
+        "color": "Solid Forest Green",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17473,
+      "title": "Solid Forest Green / M",
+      "options": {
+        "color": "Solid Forest Green",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17474,
+      "title": "Solid Forest Green / L",
+      "options": {
+        "color": "Solid Forest Green",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17475,
+      "title": "Solid Forest Green / XL",
+      "options": {
+        "color": "Solid Forest Green",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17476,
+      "title": "Solid Forest Green / 2XL",
+      "options": {
+        "color": "Solid Forest Green",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17477,
+      "title": "Solid Forest Green / 3XL",
+      "options": {
+        "color": "Solid Forest Green",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17480,
+      "title": "Solid Heavy Metal / XS",
+      "options": {
+        "color": "Solid Heavy Metal",
+        "size": "XS"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "front",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17481,
+      "title": "Solid Heavy Metal / S",
+      "options": {
+        "color": "Solid Heavy Metal",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17482,
+      "title": "Solid Heavy Metal / M",
+      "options": {
+        "color": "Solid Heavy Metal",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17483,
+      "title": "Solid Heavy Metal / L",
+      "options": {
+        "color": "Solid Heavy Metal",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17484,
+      "title": "Solid Heavy Metal / XL",
+      "options": {
+        "color": "Solid Heavy Metal",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17485,
+      "title": "Solid Heavy Metal / 2XL",
+      "options": {
+        "color": "Solid Heavy Metal",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17486,
+      "title": "Solid Heavy Metal / 3XL",
+      "options": {
+        "color": "Solid Heavy Metal",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17487,
+      "title": "Solid Heavy Metal / 4XL",
+      "options": {
+        "color": "Solid Heavy Metal",
+        "size": "4XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17490,
+      "title": "Solid Indigo / S",
+      "options": {
+        "color": "Solid Indigo",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17491,
+      "title": "Solid Indigo / M",
+      "options": {
+        "color": "Solid Indigo",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17492,
+      "title": "Solid Indigo / L",
+      "options": {
+        "color": "Solid Indigo",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17493,
+      "title": "Solid Indigo / XL",
+      "options": {
+        "color": "Solid Indigo",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17494,
+      "title": "Solid Indigo / 2XL",
+      "options": {
+        "color": "Solid Indigo",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17495,
+      "title": "Solid Indigo / 3XL",
+      "options": {
+        "color": "Solid Indigo",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17499,
+      "title": "Solid Natural / S",
+      "options": {
+        "color": "Solid Natural",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17500,
+      "title": "Solid Natural / M",
+      "options": {
+        "color": "Solid Natural",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17501,
+      "title": "Solid Natural / L",
+      "options": {
+        "color": "Solid Natural",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17502,
+      "title": "Solid Natural / XL",
+      "options": {
+        "color": "Solid Natural",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17503,
+      "title": "Solid Natural / 2XL",
+      "options": {
+        "color": "Solid Natural",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17504,
+      "title": "Solid Natural / 3XL",
+      "options": {
+        "color": "Solid Natural",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17508,
+      "title": "Solid Kelly Green / S",
+      "options": {
+        "color": "Solid Kelly Green",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17509,
+      "title": "Solid Kelly Green / M",
+      "options": {
+        "color": "Solid Kelly Green",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17510,
+      "title": "Solid Kelly Green / L",
+      "options": {
+        "color": "Solid Kelly Green",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17511,
+      "title": "Solid Kelly Green / XL",
+      "options": {
+        "color": "Solid Kelly Green",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17512,
+      "title": "Solid Kelly Green / 2XL",
+      "options": {
+        "color": "Solid Kelly Green",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17513,
+      "title": "Solid Kelly Green / 3XL",
+      "options": {
+        "color": "Solid Kelly Green",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17517,
+      "title": "Solid Light Blue / S",
+      "options": {
+        "color": "Solid Light Blue",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17518,
+      "title": "Solid Light Blue / M",
+      "options": {
+        "color": "Solid Light Blue",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17519,
+      "title": "Solid Light Blue / L",
+      "options": {
+        "color": "Solid Light Blue",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17520,
+      "title": "Solid Light Blue / XL",
+      "options": {
+        "color": "Solid Light Blue",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17521,
+      "title": "Solid Light Blue / 2XL",
+      "options": {
+        "color": "Solid Light Blue",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17522,
+      "title": "Solid Light Blue / 3XL",
+      "options": {
+        "color": "Solid Light Blue",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17526,
+      "title": "Solid Light Grey / S",
+      "options": {
+        "color": "Solid Light Grey",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17527,
+      "title": "Solid Light Grey / M",
+      "options": {
+        "color": "Solid Light Grey",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17528,
+      "title": "Solid Light Grey / L",
+      "options": {
+        "color": "Solid Light Grey",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17529,
+      "title": "Solid Light Grey / XL",
+      "options": {
+        "color": "Solid Light Grey",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17530,
+      "title": "Solid Light Grey / 2XL",
+      "options": {
+        "color": "Solid Light Grey",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17531,
+      "title": "Solid Light Grey / 3XL",
+      "options": {
+        "color": "Solid Light Grey",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17544,
+      "title": "Solid Light Pink / S",
+      "options": {
+        "color": "Solid Light Pink",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17545,
+      "title": "Solid Light Pink / M",
+      "options": {
+        "color": "Solid Light Pink",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17546,
+      "title": "Solid Light Pink / L",
+      "options": {
+        "color": "Solid Light Pink",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17547,
+      "title": "Solid Light Pink / XL",
+      "options": {
+        "color": "Solid Light Pink",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17548,
+      "title": "Solid Light Pink / 2XL",
+      "options": {
+        "color": "Solid Light Pink",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17549,
+      "title": "Solid Light Pink / 3XL",
+      "options": {
+        "color": "Solid Light Pink",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17553,
+      "title": "Solid Maroon / S",
+      "options": {
+        "color": "Solid Maroon",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17554,
+      "title": "Solid Maroon / M",
+      "options": {
+        "color": "Solid Maroon",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17555,
+      "title": "Solid Maroon / L",
+      "options": {
+        "color": "Solid Maroon",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17556,
+      "title": "Solid Maroon / XL",
+      "options": {
+        "color": "Solid Maroon",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17557,
+      "title": "Solid Maroon / 2XL",
+      "options": {
+        "color": "Solid Maroon",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17558,
+      "title": "Solid Maroon / 3XL",
+      "options": {
+        "color": "Solid Maroon",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17561,
+      "title": "Solid Midnight Navy / XS",
+      "options": {
+        "color": "Solid Midnight Navy",
+        "size": "XS"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "front",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17562,
+      "title": "Solid Midnight Navy / S",
+      "options": {
+        "color": "Solid Midnight Navy",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17563,
+      "title": "Solid Midnight Navy / M",
+      "options": {
+        "color": "Solid Midnight Navy",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17564,
+      "title": "Solid Midnight Navy / L",
+      "options": {
+        "color": "Solid Midnight Navy",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17565,
+      "title": "Solid Midnight Navy / XL",
+      "options": {
+        "color": "Solid Midnight Navy",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17566,
+      "title": "Solid Midnight Navy / 2XL",
+      "options": {
+        "color": "Solid Midnight Navy",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17567,
+      "title": "Solid Midnight Navy / 3XL",
+      "options": {
+        "color": "Solid Midnight Navy",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17568,
+      "title": "Solid Midnight Navy / 4XL",
+      "options": {
+        "color": "Solid Midnight Navy",
+        "size": "4XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17570,
+      "title": "Solid Military Green / XS",
+      "options": {
+        "color": "Solid Military Green",
+        "size": "XS"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "front",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17571,
+      "title": "Solid Military Green / S",
+      "options": {
+        "color": "Solid Military Green",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17572,
+      "title": "Solid Military Green / M",
+      "options": {
+        "color": "Solid Military Green",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17573,
+      "title": "Solid Military Green / L",
+      "options": {
+        "color": "Solid Military Green",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17574,
+      "title": "Solid Military Green / XL",
+      "options": {
+        "color": "Solid Military Green",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17575,
+      "title": "Solid Military Green / 2XL",
+      "options": {
+        "color": "Solid Military Green",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17576,
+      "title": "Solid Military Green / 3XL",
+      "options": {
+        "color": "Solid Military Green",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17580,
+      "title": "Solid Purple Rush / S",
+      "options": {
+        "color": "Solid Purple Rush",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17581,
+      "title": "Solid Purple Rush / M",
+      "options": {
+        "color": "Solid Purple Rush",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17582,
+      "title": "Solid Purple Rush / L",
+      "options": {
+        "color": "Solid Purple Rush",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17583,
+      "title": "Solid Purple Rush / XL",
+      "options": {
+        "color": "Solid Purple Rush",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17584,
+      "title": "Solid Purple Rush / 2XL",
+      "options": {
+        "color": "Solid Purple Rush",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17585,
+      "title": "Solid Purple Rush / 3XL",
+      "options": {
+        "color": "Solid Purple Rush",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17588,
+      "title": "Solid Red / XS",
+      "options": {
+        "color": "Solid Red",
+        "size": "XS"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "front",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17589,
+      "title": "Solid Red / S",
+      "options": {
+        "color": "Solid Red",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17590,
+      "title": "Solid Red / M",
+      "options": {
+        "color": "Solid Red",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17591,
+      "title": "Solid Red / L",
+      "options": {
+        "color": "Solid Red",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17592,
+      "title": "Solid Red / XL",
+      "options": {
+        "color": "Solid Red",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17593,
+      "title": "Solid Red / 2XL",
+      "options": {
+        "color": "Solid Red",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17594,
+      "title": "Solid Red / 3XL",
+      "options": {
+        "color": "Solid Red",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17595,
+      "title": "Solid Red / 4XL",
+      "options": {
+        "color": "Solid Red",
+        "size": "4XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17597,
+      "title": "Solid Royal / XS",
+      "options": {
+        "color": "Solid Royal",
+        "size": "XS"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "front",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17598,
+      "title": "Solid Royal / S",
+      "options": {
+        "color": "Solid Royal",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17599,
+      "title": "Solid Royal / M",
+      "options": {
+        "color": "Solid Royal",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17600,
+      "title": "Solid Royal / L",
+      "options": {
+        "color": "Solid Royal",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17601,
+      "title": "Solid Royal / XL",
+      "options": {
+        "color": "Solid Royal",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17602,
+      "title": "Solid Royal / 2XL",
+      "options": {
+        "color": "Solid Royal",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17603,
+      "title": "Solid Royal / 3XL",
+      "options": {
+        "color": "Solid Royal",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17604,
+      "title": "Solid Royal / 4XL",
+      "options": {
+        "color": "Solid Royal",
+        "size": "4XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17616,
+      "title": "Solid Tahiti Blue / S",
+      "options": {
+        "color": "Solid Tahiti Blue",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17617,
+      "title": "Solid Tahiti Blue / M",
+      "options": {
+        "color": "Solid Tahiti Blue",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17618,
+      "title": "Solid Tahiti Blue / L",
+      "options": {
+        "color": "Solid Tahiti Blue",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17619,
+      "title": "Solid Tahiti Blue / XL",
+      "options": {
+        "color": "Solid Tahiti Blue",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17620,
+      "title": "Solid Tahiti Blue / 2XL",
+      "options": {
+        "color": "Solid Tahiti Blue",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17621,
+      "title": "Solid Tahiti Blue / 3XL",
+      "options": {
+        "color": "Solid Tahiti Blue",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17625,
+      "title": "Solid Turquoise / S",
+      "options": {
+        "color": "Solid Turquoise",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17626,
+      "title": "Solid Turquoise / M",
+      "options": {
+        "color": "Solid Turquoise",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17627,
+      "title": "Solid Turquoise / L",
+      "options": {
+        "color": "Solid Turquoise",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17628,
+      "title": "Solid Turquoise / XL",
+      "options": {
+        "color": "Solid Turquoise",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17629,
+      "title": "Solid Turquoise / 2XL",
+      "options": {
+        "color": "Solid Turquoise",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17630,
+      "title": "Solid Turquoise / 3XL",
+      "options": {
+        "color": "Solid Turquoise",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17642,
+      "title": "Solid White / XS",
+      "options": {
+        "color": "Solid White",
+        "size": "XS"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "front",
+          "width": 2767,
+          "height": 3136
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17643,
+      "title": "Solid White / S",
+      "options": {
+        "color": "Solid White",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17644,
+      "title": "Solid White / M",
+      "options": {
+        "color": "Solid White",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17645,
+      "title": "Solid White / L",
+      "options": {
+        "color": "Solid White",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17646,
+      "title": "Solid White / XL",
+      "options": {
+        "color": "Solid White",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17647,
+      "title": "Solid White / 2XL",
+      "options": {
+        "color": "Solid White",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17648,
+      "title": "Solid White / 3XL",
+      "options": {
+        "color": "Solid White",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 17649,
+      "title": "Solid White / 4XL",
+      "options": {
+        "color": "Solid White",
+        "size": "4XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 41551,
+      "title": "Solid Gold / S",
+      "options": {
+        "color": "Solid Gold",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 41554,
+      "title": "Solid Gold / M",
+      "options": {
+        "color": "Solid Gold",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 41557,
+      "title": "Solid Gold / L",
+      "options": {
+        "color": "Solid Gold",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 41560,
+      "title": "Solid Gold / XL",
+      "options": {
+        "color": "Solid Gold",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 41563,
+      "title": "Solid Gold / 2XL",
+      "options": {
+        "color": "Solid Gold",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 41566,
+      "title": "Solid Gold / 3XL",
+      "options": {
+        "color": "Solid Gold",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64932,
+      "title": "Solid Cardinal Red / S",
+      "options": {
+        "color": "Solid Cardinal Red",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64933,
+      "title": "Solid Cardinal Red / M",
+      "options": {
+        "color": "Solid Cardinal Red",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64934,
+      "title": "Solid Cardinal Red / L",
+      "options": {
+        "color": "Solid Cardinal Red",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64935,
+      "title": "Solid Cardinal Red / XL",
+      "options": {
+        "color": "Solid Cardinal Red",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64936,
+      "title": "Solid Cardinal Red / 2XL",
+      "options": {
+        "color": "Solid Cardinal Red",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64937,
+      "title": "Solid Cardinal Red / 3XL",
+      "options": {
+        "color": "Solid Cardinal Red",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64941,
+      "title": "Solid Desert Pink / S",
+      "options": {
+        "color": "Solid Desert Pink",
+        "size": "S"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "front",
+          "width": 3232,
+          "height": 3663
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64942,
+      "title": "Solid Desert Pink / M",
+      "options": {
+        "color": "Solid Desert Pink",
+        "size": "M"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "front",
+          "width": 3591,
+          "height": 4070
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64943,
+      "title": "Solid Desert Pink / L",
+      "options": {
+        "color": "Solid Desert Pink",
+        "size": "L"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64944,
+      "title": "Solid Desert Pink / XL",
+      "options": {
+        "color": "Solid Desert Pink",
+        "size": "XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64945,
+      "title": "Solid Desert Pink / 2XL",
+      "options": {
+        "color": "Solid Desert Pink",
+        "size": "2XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 64946,
+      "title": "Solid Desert Pink / 3XL",
+      "options": {
+        "color": "Solid Desert Pink",
+        "size": "3XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 101781,
+      "title": "Solid Black / 5XL",
+      "options": {
+        "color": "Solid Black",
+        "size": "5XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    },
+    {
+      "id": 101810,
+      "title": "Solid White / 5XL",
+      "options": {
+        "color": "Solid White",
+        "size": "5XL"
+      },
+      "placeholders": [
+        {
+          "position": "back",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "front",
+          "width": 3951,
+          "height": 4477
+        },
+        {
+          "position": "neck",
+          "width": 750,
+          "height": 750
+        }
+      ],
+      "decoration_methods": [
+        "dtf",
+        "dtg"
+      ]
+    }
+  ]
+}

@@ -35,7 +35,7 @@ class PrintifyUploader:
             "Do not iron directly on the print." +
             "\n"
         )
-        self.variant_ids = [17643]
+        self.variant_ids = [17643, 17644, 17645, 17646, 17647, 17648, 17390, 17391, 17392 ,17393 ,17394, 17395]
 
     def upload_image(self, path, fname):
         url = f"{self.base_url}/uploads/images.json"
