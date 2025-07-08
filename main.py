@@ -15,6 +15,8 @@ SHOPIFY_ID = os.getenv("SHOPIFY_ID")
 REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID")
 REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET")
 REDDIT_USER_AGENT = os.getenv("REDDIT_USER_AGENT")
+REDDIT_USERNAME = os.getenv("REDDIT_USERNAME")
+REDDIT_PASSWORD = os.getenv("REDDIT_PASSWORD")
 shopify_access_token = os.getenv("shopify_access_token")
 SHOPIFY_DOMAIN = os.getenv("SHOPIFY_DOMAIN")
 headers = {
@@ -33,10 +35,16 @@ headers = {
 # print("✅ JSON dumps available in", dumper.output_dir)
 
 
+# subreddits = [
+#     'dankmemes', 'HistoryMemes', 'PoliticalMemes',
+#     'TrumpMemes', 'Memes_Of_The_Dank', 'PoliticalCompassMemes'
+# ]
+
 subreddits = [
-    'dankmemes', 'HistoryMemes', 'PoliticalMemes',
+    'PoliticalMemes', 'HistoryMemes',
     'TrumpMemes', 'Memes_Of_The_Dank', 'PoliticalCompassMemes'
 ]
+
 
 if __name__ == "__main__":
     print("Starting Reddit scraping...")

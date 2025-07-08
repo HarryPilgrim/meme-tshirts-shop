@@ -16,7 +16,7 @@ class PrintifyUploader:
         shopify_access_token,
         default_blueprint=5,
         default_provider=99,
-        default_price=1999
+        default_price=1799
     ):
         self.access_token = access_token
         self.shop_id = shop_id

@@ -6,6 +6,7 @@ import tweepy
 from blueskysocial import Client, Post, Image
 #import Image
 import time
+import praw
 
 # Load environment variables if needed
 from dotenv import load_dotenv
@@ -18,6 +19,12 @@ TW_ACCESS_TOKEN = os.getenv("TW_ACCESS_TOKEN")
 TW_ACCESS_SECRET = os.getenv("TW_ACCESS_SECRET")
 TW_BEARER_TOKEN = os.getenv("TW_BEARER_TOKEN")
 
+#Reddit credentials
+REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID")
+REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET")
+REDDIT_USER_AGENT = os.getenv("REDDIT_USER_AGENT")
+REDDIT_USERNAME = os.getenv("REDDIT_USERNAME")
+REDDIT_PASSWORD = os.getenv("REDDIT_PASSWORD")
 
 # Bluesky credentials
 BLUESKY_HANDLE = os.getenv("BLUESKY_HANDLE")
@@ -86,6 +93,34 @@ class SocialMediaPoster:
             result = self.bsky.post(post)
         return f"https://bsky.app/profile/{BLUESKY_HANDLE}/post/{result['uri'].split('/')[-1]}"
 
+    def post_to_reddit(self, rec):
+        reddit = praw.Reddit(
+            client_id=REDDIT_CLIENT_ID,
+            client_secret=REDDIT_CLIENT_SECRET,
+            user_agent=REDDIT_USER_AGENT,
+            username=REDDIT_USERNAME,
+            password=REDDIT_PASSWORD
+        )
+
+        subreddit = reddit.subreddit("MemesOnTShirts")
+
+        # Try clickable title (some Markdown formatting may work only in comments)
+
+        title = f"{rec['title']}"
+
+        try:
+            submission = subreddit.submit_image(title=title, image_path=rec['local_path'])
+            print(f"Posted image to Reddit: {submission.url}")
+
+            # Add comment with link to buy
+            comment_text = f"[Buy this shirt here]({rec['shopify_url']})"
+            submission.reply(comment_text)
+            print(f"Commented with Shopify link: {rec['shopify_url']}")
+            return submission.url
+        except Exception as e:
+            print(f"Reddit post failed for {rec['id']}: {e}")
+            return None
+
     def run(self):
         records = self.load_records()
         updated = False
@@ -105,6 +140,14 @@ class SocialMediaPoster:
                 if url:
                     rec['twitter_url'] = url
                     print(f"Tweeted {rec['id']} → {url}")
+                    updated = True
+
+               ####use instagram_url for reddit posting
+            if not rec.get('instagram_url'):
+                url = self.try_with_retries(self.post_to_reddit, args=(rec,), id=rec['id'], platform="Reddit")
+                if url:
+                    rec['instagram_url'] = url
+                    print(f"posted on reddit (in instagram slot) {rec['id']} → {url}")
                     updated = True
 
 
