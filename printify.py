@@ -6,6 +6,7 @@ import re
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 load_dotenv()
+from PIL import Image
 
 class PrintifyUploader:
     def __init__(
@@ -37,6 +38,39 @@ class PrintifyUploader:
         )
         self.variant_ids = [17643, 17644, 17645, 17646, 17647, 17648, 17390, 17391, 17392 ,17393 ,17394, 17395]
 
+    def calculate_optimal_scale(self, image_path):
+        """Calculate optimal scale based on image dimensions and aspect ratio"""
+        try:
+            with Image.open(image_path) as img:
+                width, height = img.size
+
+            # Calculate aspect ratio
+            aspect_ratio = width / height
+
+            # Base scale starts at 0.8
+            base_scale = 0.9
+
+            # Adjust scale based on aspect ratio
+            if aspect_ratio > 1.5:  # Very wide image
+                scale = base_scale * 0.7  # Scale down more
+            elif aspect_ratio < 0.67:  # Very tall image
+                scale = base_scale * 0.7  # Scale down more
+            elif width > 2000 or height > 2000:  # Very large image
+                scale = base_scale * 0.8  # Scale down a bit more
+            else:
+                scale = base_scale  # Standard scale
+
+            # Ensure scale doesn't go below 0.4 or above 0.9
+            scale = max(0.4, min(0.9, scale))
+
+            print(
+                f"Image {os.path.basename(image_path)}: {width}x{height}, ratio={aspect_ratio:.2f}, scale={scale:.2f}")
+            return scale
+
+        except Exception as e:
+            print(f"Error calculating scale for {image_path}: {e}")
+            return 0.9  # Safe fallback
+
     def upload_image(self, path, fname):
         url = f"{self.base_url}/uploads/images.json"
         with open(path, 'rb') as f:
@@ -45,7 +79,13 @@ class PrintifyUploader:
         r.raise_for_status()
         return r.json()["id"]
 
-    def create_product(self, image_id, title, desc, tags, price):
+    def create_product(self, image_id, title, desc, tags, price, image_path=None, scale=None):
+        # Calculate optimal scale if path is provided and scale not specified
+        if scale is None and image_path:
+            scale = self.calculate_optimal_scale(image_path)
+        elif scale is None:
+            scale = 0.8  # Default fallback
+
         url = f"{self.base_url}/shops/{self.shop_id}/products.json"
         payload = {
             "title": title,
@@ -56,12 +96,39 @@ class PrintifyUploader:
             "variants": [{"id": vid, "price": price, "is_enabled": True} for vid in self.variant_ids],
             "print_areas": [{
                 "variant_ids": self.variant_ids,
-                "placeholders": [{"position": "front", "images": [{"id": image_id, "x": 0.5, "y": 0.5, "scale": 1.0, "angle": 0}]}]
+                "placeholders": [
+                    {"position": "front", "images": [{"id": image_id, "x": 0.5, "y": 0.5, "scale": scale, "angle": 0}]}]
             }]
         }
         r = requests.post(url, headers=self.headers, json=payload)
         r.raise_for_status()
         return r.json()
+
+    # def upload_image(self, path, fname):
+    #     url = f"{self.base_url}/uploads/images.json"
+    #     with open(path, 'rb') as f:
+    #         data = base64.b64encode(f.read()).decode()
+    #     r = requests.post(url, headers=self.headers, json={"file_name": fname, "contents": data})
+    #     r.raise_for_status()
+    #     return r.json()["id"]
+    #
+    # def create_product(self, image_id, title, desc, tags, price):
+    #     url = f"{self.base_url}/shops/{self.shop_id}/products.json"
+    #     payload = {
+    #         "title": title,
+    #         "description": desc,
+    #         "tags": tags,
+    #         "blueprint_id": self.default_blueprint,
+    #         "print_provider_id": self.default_provider,
+    #         "variants": [{"id": vid, "price": price, "is_enabled": True} for vid in self.variant_ids],
+    #         "print_areas": [{
+    #             "variant_ids": self.variant_ids,
+    #             "placeholders": [{"position": "front", "images": [{"id": image_id, "x": 0.5, "y": 0.5, "scale": 1.0, "angle": 0}]}]
+    #         }]
+    #     }
+    #     r = requests.post(url, headers=self.headers, json=payload)
+    #     r.raise_for_status()
+    #     return r.json()
 
     def publish_product(self, pid):
         url = f"{self.base_url}/shops/{self.shop_id}/products/{pid}/publish.json"

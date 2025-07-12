@@ -95,13 +95,24 @@ class RedditContent:
         downloaded = 0
         skipped = 0
 
+        # Calculate how many posts to get from each subreddit
+        posts_per_sub = max(1, limit // len(self.subreddits))
+        remaining = limit % len(self.subreddits)
+
         with open(out_path, 'a', encoding='utf-8') as fp:
-            for name in self.subreddits:
+            for i, name in enumerate(self.subreddits):
+                if downloaded >= limit:
+                    break
+
+                # Give extra posts to first few subreddits if there's a remainder
+                sub_limit = posts_per_sub + (1 if i < remaining else 0)
+                sub_downloaded = 0
+
                 subreddit = self.reddit.subreddit(name)
-                posts = getattr(subreddit, sort)(limit=limit * 3)
+                posts = getattr(subreddit, sort)(limit=sub_limit * 3)
 
                 for post in posts:
-                    if downloaded >= limit:
+                    if downloaded >= limit or sub_downloaded >= sub_limit:
                         break
 
                     # collect image URLs...
@@ -114,11 +125,11 @@ class RedditContent:
                                 urls.append(
                                     post.media_metadata[item['media_id']]['s']['u'].split('?')[0]
                                 )
-                    elif any(post.url.lower().endswith(ext) for ext in ('.jpg','.jpeg','.png')):
+                    elif any(post.url.lower().endswith(ext) for ext in ('.jpg', '.jpeg', '.png')):
                         urls = [post.url]
 
                     for img_url in urls:
-                        if downloaded >= limit:
+                        if downloaded >= limit or sub_downloaded >= sub_limit:
                             break
 
                         # download image to disk with retry logic
@@ -148,7 +159,7 @@ class RedditContent:
                             "id": downloaded + 1,
                             "post_id": post.id,
                             "gallery_id": gallery_id,
-                            #"local_path": f"meme-tshirts-shop/{local_path}",
+                            # "local_path": f"meme-tshirts-shop/{local_path}",
                             "local_path": local_path,
                             "file_name": filename,
                             "title": f"{post.title.strip()} - meme on a T-shirt",
@@ -170,15 +181,103 @@ class RedditContent:
                         # append JSONL line
                         fp.write(json.dumps(rec, ensure_ascii=False) + "\n")
                         downloaded += 1
-                        print(f"[✅] Saved JSON record #{downloaded}")
+                        sub_downloaded += 1
+                        print(f"[✅] Saved JSON record #{downloaded} from r/{name}")
 
                         # Add delay between requests to avoid rate limiting
                         time.sleep(1.5)  # Wait 1.5 seconds between requests
 
-                if downloaded >= limit:
-                    break
-
         print(f"\n[📊] Summary: {downloaded} images downloaded, {skipped} skipped due to errors")
+
+    # def download_posts(self, limit=10, sort='hot'):
+    #     out_path = self.csv_path.replace('.csv', '.jsonl')
+    #     downloaded = 0
+    #     skipped = 0
+    #
+    #     with open(out_path, 'a', encoding='utf-8') as fp:
+    #         for name in self.subreddits:
+    #             subreddit = self.reddit.subreddit(name)
+    #             posts = getattr(subreddit, sort)(limit=limit * 3)
+    #
+    #             for post in posts:
+    #                 if downloaded >= limit:
+    #                     break
+    #
+    #                 # collect image URLs...
+    #                 urls, gallery_id = [], ''
+    #                 if getattr(post, 'is_gallery', False):
+    #                     gallery_id = post.id
+    #                     for item in post.gallery_data['items']:
+    #                         ext = post.media_metadata[item['media_id']]['m'].split('/')[-1]
+    #                         if ext != 'gif':
+    #                             urls.append(
+    #                                 post.media_metadata[item['media_id']]['s']['u'].split('?')[0]
+    #                             )
+    #                 elif any(post.url.lower().endswith(ext) for ext in ('.jpg','.jpeg','.png')):
+    #                     urls = [post.url]
+    #
+    #                 for img_url in urls:
+    #                     if downloaded >= limit:
+    #                         break
+    #
+    #                     # download image to disk with retry logic
+    #                     filename = os.path.basename(urlparse(img_url).path)
+    #                     local_path = f"{self.output_dir}/{filename}"
+    #                     ensure_dir(local_path)
+    #
+    #                     # Try to download with retry logic
+    #                     r = self.download_image_with_retry(img_url)
+    #
+    #                     if r is None:
+    #                         print(f"[⚠️] Skipping failed download: {filename}")
+    #                         skipped += 1
+    #                         continue
+    #
+    #                     try:
+    #                         with open(local_path, 'wb') as f:
+    #                             for chunk in r.iter_content(1024):
+    #                                 f.write(chunk)
+    #                     except Exception as e:
+    #                         print(f"[❌] Error saving file {filename}: {e}")
+    #                         skipped += 1
+    #                         continue
+    #
+    #                     # build the record
+    #                     rec = {
+    #                         "id": downloaded + 1,
+    #                         "post_id": post.id,
+    #                         "gallery_id": gallery_id,
+    #                         #"local_path": f"meme-tshirts-shop/{local_path}",
+    #                         "local_path": local_path,
+    #                         "file_name": filename,
+    #                         "title": f"{post.title.strip()} - meme on a T-shirt",
+    #                         "description": self._build_description(post.id),
+    #                         "tags": [],
+    #                         "printify_address": f"https://www.reddit.com{post.permalink}",
+    #                         # Printify fields empty for now:
+    #                         "printify_product_id": None,
+    #                         "retail_price": None,
+    #                         "base_cost_pence": None,
+    #                         "profit_estimate": None,
+    #                         "shopify_url": None,
+    #                         "twitter_url": None,
+    #                         "bluesky_url": None,
+    #                         "instagram_url": None,
+    #                         "error": None
+    #                     }
+    #
+    #                     # append JSONL line
+    #                     fp.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    #                     downloaded += 1
+    #                     print(f"[✅] Saved JSON record #{downloaded}")
+    #
+    #                     # Add delay between requests to avoid rate limiting
+    #                     time.sleep(1.5)  # Wait 1.5 seconds between requests
+    #
+    #             if downloaded >= limit:
+    #                 break
+    #
+    #     print(f"\n[📊] Summary: {downloaded} images downloaded, {skipped} skipped due to errors")
 
     def _build_description(self, post_id):
         try:

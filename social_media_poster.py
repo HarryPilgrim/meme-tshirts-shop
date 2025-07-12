@@ -70,15 +70,41 @@ class SocialMediaPoster:
             try:
                 return func(*args)
             except Exception as e:
-                print(f"{platform} attempt {attempt+1} for {id} failed: {e}")
+                error_msg = str(e)
+                print(f"{platform} attempt {attempt + 1} for {id} failed: {e}")
+
+                # Check for specific conditions to skip retries
+                if platform == "Bluesky":
+                    if "image file size too large" in error_msg:
+                        print(f"Skipping {platform} for {id} - image too large")
+                        return None
+                    elif "Maximum of 300 characters allowed" in error_msg:
+                        print(f"Skipping {platform} for {id} - text too long")
+                        return None
+                elif platform == "Twitter":
+                    if "No such file or directory" in error_msg:
+                        print(f"Skipping {platform} for {id} - file not found")
+                        return None
+
                 time.sleep(delay * (2 ** attempt))  # Exponential backoff
-        print(f"{platform} failed for {id} after {retries} retries. Deleting image.")
-        try:
-            os.remove(args[0]['local_path'])
-            print(f"🗑️ Deleted {args[0]['local_path']}")
-        except Exception as e:
-            print(f"Image deletion error for {id}: {e}")
+
+        print(f"{platform} failed for {id} after {retries} retries.")
         return None
+
+    # def try_with_retries(self, func, args=(), retries=3, delay=2, id=None, platform=None):
+    #     for attempt in range(retries):
+    #         try:
+    #             return func(*args)
+    #         except Exception as e:
+    #             print(f"{platform} attempt {attempt+1} for {id} failed: {e}")
+    #             time.sleep(delay * (2 ** attempt))  # Exponential backoff
+    #     print(f"{platform} failed for {id} after {retries} retries. Deleting image.")
+    #     try:
+    #         os.remove(args[0]['local_path'])
+    #         print(f"🗑️ Deleted {args[0]['local_path']}")
+    #     except Exception as e:
+    #         print(f"Image deletion error for {id}: {e}")
+    #     return None
 
     def post_to_twitter(self, rec):
         media = self.tw_api_v1.media_upload(rec['local_path'])
@@ -87,11 +113,31 @@ class SocialMediaPoster:
         return f"https://twitter.com/i/web/status/{tweet.data['id']}"
 
     def post_to_bluesky(self, rec):
+        # Check file size first (1MB = 1000000 bytes)
+        if os.path.getsize(rec['local_path']) > 1000000:
+            raise Exception("image file size too large")
+
+        # Truncate title for Bluesky's 300 character limit
+        base_text = f"{rec['title']}\nBuy here: {rec['shopify_url']}"
+        if len(base_text) > 300:
+            # Calculate how much space we need for the URL part
+            url_part = f"\nBuy here: {rec['shopify_url']}"
+            available_for_title = 300 - len(url_part)
+            truncated_title = rec['title'][:available_for_title - 3] + "..."
+            base_text = f"{truncated_title}\nBuy here: {rec['shopify_url']}"
+
         with open(rec['local_path'], 'rb') as f:
             img = Image(f, alt_text=rec['title'])
-            post = Post(f"{rec['title']}\nBuy here: {rec['shopify_url']}", with_attachments=[img])
+            post = Post(base_text, with_attachments=[img])
             result = self.bsky.post(post)
         return f"https://bsky.app/profile/{BLUESKY_HANDLE}/post/{result['uri'].split('/')[-1]}"
+
+    # def post_to_bluesky(self, rec):
+    #     with open(rec['local_path'], 'rb') as f:
+    #         img = Image(f, alt_text=rec['title'])
+    #         post = Post(f"{rec['title']}\nBuy here: {rec['shopify_url']}", with_attachments=[img])
+    #         result = self.bsky.post(post)
+    #     return f"https://bsky.app/profile/{BLUESKY_HANDLE}/post/{result['uri'].split('/')[-1]}"
 
     def post_to_reddit(self, rec):
         reddit = praw.Reddit(
@@ -121,6 +167,7 @@ class SocialMediaPoster:
             print(f"Reddit post failed for {rec['id']}: {e}")
             return None
 
+
     def run(self):
         records = self.load_records()
         updated = False
@@ -142,17 +189,8 @@ class SocialMediaPoster:
                     print(f"Tweeted {rec['id']} → {url}")
                     updated = True
 
-               ####use instagram_url for reddit posting
-            if not rec.get('instagram_url'):
-                url = self.try_with_retries(self.post_to_reddit, args=(rec,), id=rec['id'], platform="Reddit")
-                if url:
-                    rec['instagram_url'] = url
-                    print(f"posted on reddit (in instagram slot) {rec['id']} → {url}")
-                    updated = True
-
-
-
-            if rec.get('twitter_url') and rec.get('bluesky_url'):
+            # Only delete after both platforms have been attempted
+            if (rec.get('twitter_url') or rec.get('bluesky_url')) and os.path.exists(rec['local_path']):
                 try:
                     os.remove(rec['local_path'])
                     print(f"🗑️ Deleted {rec['local_path']}")
@@ -166,6 +204,46 @@ class SocialMediaPoster:
         with open('meme-tshirts-shop/reddit_images.jsonl', 'w', encoding='utf-8') as fp:
             pass  # This clears the file
         print("✅ All done. JSONL file emptied.")
+
+    #
+    # def run(self):
+    #     records = self.load_records()
+    #     updated = False
+    #     for rec in records:
+    #         if not rec.get('printify_product_id'):
+    #             continue
+    #
+    #         if not rec.get('bluesky_url'):
+    #             url = self.try_with_retries(self.post_to_bluesky, args=(rec,), id=rec['id'], platform="Bluesky")
+    #             if url:
+    #                 rec['bluesky_url'] = url
+    #                 print(f"Bluesky {rec['id']} → {url}")
+    #                 updated = True
+    #
+    #         if not rec.get('twitter_url'):
+    #             url = self.try_with_retries(self.post_to_twitter, args=(rec,), id=rec['id'], platform="Twitter")
+    #             if url:
+    #                 rec['twitter_url'] = url
+    #                 print(f"Tweeted {rec['id']} → {url}")
+    #                 updated = True
+    #
+    #
+    #
+    #
+    #         if rec.get('twitter_url') and rec.get('bluesky_url'):
+    #             try:
+    #                 os.remove(rec['local_path'])
+    #                 print(f"🗑️ Deleted {rec['local_path']}")
+    #             except Exception as e:
+    #                 print(f"Image deletion error for {rec['id']}: {e}")
+    #
+    #     if updated:
+    #         self.save_records(records)
+    #         print("✅ All new posts processed and JSONL updated.")
+    #     # At the very end of your run() function
+    #     with open('meme-tshirts-shop/reddit_images.jsonl', 'w', encoding='utf-8') as fp:
+    #         pass  # This clears the file
+    #     print("✅ All done. JSONL file emptied.")
 
 # class SocialMediaPoster:
 #     def __init__(self, jsonl_path='printify_upload.jsonl'):
