@@ -47,7 +47,7 @@ class PrintifyUploader:
             # Calculate aspect ratio
             aspect_ratio = width / height
 
-            # Base scale starts at 0.95
+            # Base scale starts at 0.95 yes
             base_scale = 0.95
 
             # Adjust scale based on aspect ratio
