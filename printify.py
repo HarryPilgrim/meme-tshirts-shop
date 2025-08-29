@@ -47,21 +47,21 @@ class PrintifyUploader:
             # Calculate aspect ratio
             aspect_ratio = width / height
 
-            # Base scale starts at 0.8
-            base_scale = 0.9
+            # Base scale starts at 0.95
+            base_scale = 0.95
 
             # Adjust scale based on aspect ratio
             if aspect_ratio > 1.5:  # Very wide image
-                scale = base_scale * 0.7  # Scale down more
+                scale = base_scale * 0.8  # Scale down more
             elif aspect_ratio < 0.67:  # Very tall image
-                scale = base_scale * 0.7  # Scale down more
+                scale = base_scale * 0.75  # Scale down more
             elif width > 2000 or height > 2000:  # Very large image
                 scale = base_scale * 0.8  # Scale down a bit more
             else:
                 scale = base_scale  # Standard scale
 
             # Ensure scale doesn't go below 0.4 or above 0.9
-            scale = max(0.4, min(0.9, scale))
+            scale = max(0.4, min(0.95, scale))
 
             print(
                 f"Image {os.path.basename(image_path)}: {width}x{height}, ratio={aspect_ratio:.2f}, scale={scale:.2f}")
